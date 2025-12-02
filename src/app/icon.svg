@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D946EF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Circular background -->
+  <circle cx="256" cy="256" r="256" fill="#000000"/>
+  
+  <!-- Outer circle border -->
+  <circle cx="256" cy="256" r="240" fill="none" stroke="url(#gradient)" stroke-width="4"/>
+  
+  <!-- Abstract dancing figure -->
+  <g transform="translate(256, 256)">
+    <!-- Head -->
+    <circle cx="0" cy="-80" r="28" fill="url(#gradient)"/>
+    
+    <!-- Body -->
+    <path d="M 0,-52 Q -8,-20 -15,20 Q -18,40 -12,60" 
+          fill="none" stroke="url(#gradient)" stroke-width="16" stroke-linecap="round"/>
+    
+    <!-- Left arm (raised) -->
+    <path d="M -12,0 Q -45,-25 -70,-50" 
+          fill="none" stroke="url(#gradient)" stroke-width="14" stroke-linecap="round"/>
+    
+    <!-- Right arm (extended) -->
+    <path d="M -8,10 Q 25,5 60,15" 
+          fill="none" stroke="url(#gradient)" stroke-width="14" stroke-linecap="round"/>
+    
+    <!-- Left leg -->
+    <path d="M -15,60 Q -25,85 -40,110" 
+          fill="none" stroke="url(#gradient)" stroke-width="14" stroke-linecap="round"/>
+    
+    <!-- Right leg (dynamic pose) -->
+    <path d="M -10,60 Q 15,90 35,105" 
+          fill="none" stroke="url(#gradient)" stroke-width="14" stroke-linecap="round"/>
+    
+    <!-- Accent circles for movement -->
+    <circle cx="-70" cy="-50" r="8" fill="#D946EF" opacity="0.6"/>
+    <circle cx="60" cy="15" r="8" fill="#8B5CF6" opacity="0.6"/>
+    <circle cx="-40" cy="110" r="8" fill="#D946EF" opacity="0.6"/>
+  </g>
+</svg>
